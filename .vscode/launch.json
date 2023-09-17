@@ -1,0 +1,19 @@
+// A launch configuration that compiles the extension and then opens it inside a new window
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "extensionHost",
+			"request": "launch",
+			"name": "Launch Client",
+			"runtimeExecutable": "${execPath}",
+            "autoAttachChildProcesses": true,
+			"args": ["--extensionDevelopmentPath=${workspaceRoot}/lsp"],
+			"outFiles": ["${workspaceRoot}/lsp/client/out/**/*.js", "${workspaceRoot}/lsp/server/out/**/*.js"],
+			"preLaunchTask": {
+				"type": "npm",
+				"script": "watch"
+			}
+		}
+	]
+}

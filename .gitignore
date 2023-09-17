@@ -1,0 +1,8 @@
+lsp/node_modules/*
+lsp/client/node_modules/*
+lsp/server/node_modules/*
+lsp/package-lock.json
+lsp/client/package-lock.json
+lsp/server/package-lock.json
+lsp/client/out/*
+lsp/server/out/*
